@@ -1,7 +1,7 @@
 import {getHabits, createHabit, updateHabit, deleteHabit, archiveHabit, reorderHabits} from '../controllers/habitController.js';
 import express from 'express';
 const router = express.Router();
-import { protect } from '../middleware/authMiddleware.js';
+import { protect } from '../middleware/auth.js';
 
 router.use(protect);
 
